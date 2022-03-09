@@ -35,7 +35,7 @@ Information about students.
 | 2   | aa4513@foo.bar.edu |
 | 3   | zi5900@foo.bar.edu |
 | 4   | ot5925@foo.bar.edu |
-| ... | ci5942@foo.bar.edu |
+| ... | ...                |
 
 This table is 4NF-compliant:
 
@@ -126,7 +126,7 @@ Information about a given student's submission of a given assignment.
 | 3   | 1             | 3          | 75    |
 | 4   | 4             | 2          | 92    |
 | 5   | 3             | 2          | 65    |
-| 6   | ...           | ...        | ...   |
+| ... | ...           | ...        | ...   |
 
 This table is 4NF-compliant:
 
