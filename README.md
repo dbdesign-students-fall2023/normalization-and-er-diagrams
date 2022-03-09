@@ -16,7 +16,7 @@ The original data set is not 4NF compliant.
 - 1st normal form is satisfied - each record has the same fields, with only one value per field.
 - 2nd normal form is satisfied - there is no composite key indicated and no likely candidate composite keys, so it does not apply.
 - 3rd normal form is not satisfied - there are many fields that are facts about non-key fields. For example, `due date` is a fact about an assignment, yet neither `assignment_id` nor `assignment_title` - two fields that seem to be candidate keys - can be a primary key field because they contains multiple records with the same values in these fields.
-- 4th normal form is not satisfied - it require 3rd normal form to be satisfied.
+- 4th normal form is not satisfied - it requires 3rd normal form to be satisfied, which it is not.
 
 ## Modified data set
 
