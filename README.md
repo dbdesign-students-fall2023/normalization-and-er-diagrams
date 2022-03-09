@@ -49,7 +49,7 @@ This table is 4NF-compliant:
 Information about professors.
 
 - `last_name` and `email` fields in the original data set were descriptive of professors.
-- While `email` is relatively sure to be unique for each professor, we have chosen to create a surrogate key, `id` to serve as primary key instead. This helps avoid update anomalies, where if the email address of a given professor is updated, it's possible a foreign key in other table pointing to that professor record would no longer be a valid reference.
+- While `email` is relatively sure to be unique for each professor, we have chosen to create a surrogate key, `id` to serve as primary key instead. This helps avoid update anomalies, so changing a professor's email address doesn't require changes to all references in other tables to that professor.
 
 | id  | last_name | email             |
 | :-- | :-------- | :---------------- |
