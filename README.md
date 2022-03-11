@@ -119,7 +119,7 @@ This table is 4NF-compliant:
 Information about a given student's submission of a given assignment.
 
 - In the original data, `assignment_id`, `student_id`, and `grade` were descriptive of a given student's submission of a given assignment.
-- If we assume that any given student can only submit any given assignment once, then we could use the combination of `assignment_id` and `student_id` as a composite key. However, just in case we may want to allow a student to submit an assignment more than once, we have created a surrogate key, `id`.
+- If we assume that any given student can only submit any given assignment once, then we could use the combination of `assignment_id` and `student_id` as a composite key. However, just in case we may want to allow a student to submit an assignment more than once, we have created a surrogate key, `id`. Since our table design allows a student to make multiple submissions of the same assignment, we may want to add a `created` field that stores the timestamp of each submission, so that we can easily see which is the most recent.
 
 | id  | assignment_id | student_id | grade |
 | :-- | :------------ | :--------- | :---- |
