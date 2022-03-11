@@ -65,7 +65,7 @@ This table is 4NF-compliant:
 - 3NF is satisfied - the non-key fields are descriptive of the entity identified by the primary key (i.e. `last_name` and `email` are descriptive of a given professor).
 - 4NF is satisfied - there are no fields containing independent multi-valued facts.
 
-### section
+### sections
 
 Information about a particular section of a course.
 
@@ -89,6 +89,8 @@ This table is 4NF-compliant:
 - 2NF is satisfied - there is no compound key, so it does not apply.
 - 3NF is satisfied - the non-key fields are descriptive of the entity identified by the primary key (i.e. `last_name` and `email` are descriptive of a given professor).
 - 4NF is satisfied - there are no fields containing independent multi-valued facts.
+
+Note that the data about sections of a course might lead you to believe that there should be a `courses` table with basic information about the course that is the same for each section. For example, we could reasonably imagine that the course title, description, and so on might be stored in such a table, whereas the `sections` table would contain only that information that is different from one section of the course to another. This is generally a good idea, but there is no data in our original data set about the course. We only have details that are descriptive of a particular section of the course.
 
 ### assignments
 
